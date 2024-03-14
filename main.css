@@ -128,14 +128,11 @@ main code {
 
 .container>* {
   width: 50%;
+  object-fit: contain;
 }
 
 .reverse {
   flex-direction: row-reverse;
-}
-
-.container img {
-  width: 100%;
 }
 
 .container p {
