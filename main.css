@@ -111,15 +111,6 @@ main p {
   margin: 1.5em 0;
 }
 
-main code {
-  display: block;
-
-  padding: 1em;
-  border-radius: 1em;
-
-  background: #a8a8b1;
-}
-
 .container {
   display: flex;
   flex-direction: row;
@@ -137,4 +128,43 @@ main code {
 
 .container p {
   margin: auto;
+}
+
+main code {
+  display: block;
+
+  padding: 1em;
+  border-radius: 1em;
+
+  font: 1rem consolas, monospace;
+
+  background: #f6f8fa;
+}
+
+code .indent {
+  margin-left: 1.17em;
+}
+
+code .red {
+  color: #d8222e;
+}
+
+code .lightblue {
+  color: #0969da;
+}
+
+code .blue {
+  color: #0550ae;
+}
+
+code .black {
+  color: #080b10;
+}
+
+code .navy {
+  color: #0a3069;
+}
+
+code .gray {
+  color: #6e7781;
 }
