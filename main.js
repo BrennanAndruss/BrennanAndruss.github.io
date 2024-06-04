@@ -31,8 +31,12 @@ mutationInput.addEventListener("input", (e) => {
   mutationRate = e.target.value / 100;
 })
 
+document.getElementById("reset").addEventListener("click", (e) => {
+  reset();
+})
+
 let counter = 0;
-let generations = 0;
+let generations = 1;
 
 
 // Handle the game logic
@@ -63,9 +67,13 @@ function reset() {
   savedBirds = [];
   pipes = [];
   counter = 0;
-  generations = 0;
+  generations = 1;
 
-  init();
+  // Create a new random population
+  document.getElementById("num-gens").innerHTML = "Generations: " + generations;
+  for (let i = 0; i < populationSize; i++) {
+    birds.push(new Bird());
+  }
 }
 
 function draw() {
