@@ -9,6 +9,7 @@
 .site-container {
   margin: auto;
   width: 75%;
+  max-width: 758px;
 }
 
 .title {

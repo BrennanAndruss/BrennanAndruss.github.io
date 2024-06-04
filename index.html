@@ -4,13 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NEAT Flappy Bird</title>
+  <title>Neuroevolution Flappy Bird</title>
   <link rel="stylesheet" type="text/css" href="style.css" />
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>
 
   <script src="main.js" type="module" defer></script>
-  <!-- <script src="bird.js" type="module" defer></script> -->
-  <!-- <script src="pipe.js" type="module" defer></script> -->
 </head>
 
 <body>
@@ -21,9 +19,6 @@
     </div>
     <hr>
     <div class="text">
-      <p>
-        So, what is Neuroevolution?
-      </p>
       <p>
         Neuroevolution is a biologically-insipred system that uses Darwinian principles to evolve the parameters of a
         nerual network over
@@ -130,6 +125,11 @@
         I provided inputs for modifying some of the evolutionary parameters. Restart the simulation or wait for the next
         generation for changes to go into effect and see how they affect the evolution of the flappy birds.
       </p>
+      <p>
+        <i>
+          Simulation is best viewed on desktops and tablets.
+        </i>
+      </p>
     </div>
 
     <div class="sim-container">
@@ -142,7 +142,6 @@
           <div class="param">
             <p>Population Size</p>
             <input id="population-size" type="number" min="2" />
-            <!-- Set a max to whatever the computer can reasonably handle -->
           </div>
           <div class="param">
             <p>Mutation Rate (%)</p>
@@ -183,6 +182,7 @@
       </p>
     </div>
   </div>
+  <br><br>
 
 </body>
 
